@@ -1,74 +1,189 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/Bootstrap-Blog-Template-DevBlog-Pormo.jpg" alt="Bootstrap 4 Blog Template for Developers" /></a>
+# Hamilton <!-- omit in toc -->
 
-## Theme Details & Demo
+A minimal and beautiful Jekyll theme best for writing and note-taking.
 
-**Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/
+The original purpose of this theme is to be a replacement of the default Jekyll theme -- [Minima](https://github.com/jekyll/minima). Hamilton is an enhancement of Minima but still, keep in minimal.
 
-DevBlog is a **free Bootstrap blog template** made for developers. It provides a great reading experience for desktop and mobile users. Comes with 8 hand-picked colour schemes, you can easily customise the theme colour/styling via the source SCSS files.
+Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 
-Blogging is a great way for developers to share their ideas and promote their work or side projects. This template can help you set up a professional-looking blog in no time. No need to rely on a third-party blogging platform – get all the traffic to your own site instead. Want to get your blog online and start building your audience? Don’t miss this template!
+| Skins | Displays |
+| ----- | -------- |
+| Daylight | ![screenshot](screenshot.png) |
+| Sunrise/Sunset | ![screenshot](screenshot-sunrise.png) |
+| Midnight | ![screenshot](screenshot-midnight.png) |
 
-## Author & License
+## Features <!-- omit in toc -->
 
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed)
+- [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [Google Analytics](https://analytics.google.com/)
+- [MathJax](https://www.mathjax.org/)
+- [Disqus](https://disqus.com/)
+- [Font Awesome](https://fontawesome.com/)
+- TOC
+- Customizable head
+- Configurable page navigation
+- Customizable styles and skins
+- Archive pages implemented in pure Liquid
 
-If you'd like to **use the template without the attribution**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/)
+## Table of Contents <!-- omit in toc -->
 
-#### Follow Xiaoying
+- [Installation](#installation)
+- [Configuration](#configuration)
+  - [Optional Parameters](#optional-parameters)
+- [Archive Pages](#archive-pages)
+- [MathJax](#mathjax)
+- [TOC](#toc)
+- [Customization](#customization)
+  - [Metadata](#metadata)
+  - [Navigation](#navigation)
+  - [Social Media](#social-media)
+  - [Skins](#skins)
+  - [More Customized Styles](#more-customized-styles)
+- [License](#license)
 
-[Twitter](https://twitter.com/3rdwave_themes)
+## Installation
 
-[Facebook](https://www.facebook.com/3rdwavethemes/)
+You can choose one of the following methods to install Hamilton:
 
-[Dribbble](https://dribbble.com/Xiaoying)
+- Directly specify the `jekyll-theme-hamilton` gem.
 
-[Medium](https://medium.com/@3rdwave_themes)
+    1. Add `gem 'jekyll-theme-hamilton'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
+        ```yml
+        plugins:
+          - jekyll-theme-hamilton
+        ```
 
+- If your site is hosted on GitHub Pages, you can use [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to import the master branch of Hamilton.
 
-## Latest Version
-**v1.1** - 12 Feb 2019
+    1. Add `gem 'jekyll-remote-theme'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/?target=changelog)
+        ```yml
+        plugins:
+          - jekyll-remote-theme
 
-## Colour Schemes
+        remote_theme: ngzhio/jekyll-theme-hamilton
+        ```
 
-#### Colour 1 (theme-1.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-1.jpg" width="400" alt="DevBlog color 1" />
+## Configuration
 
-#### Colour 2 (theme-2.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-2.jpg" width="400" alt="DevBlog color 2" />
+After installation, you can run `jekyll serve` to check out your site, but before that, *make sure* the below **required parameters** are configured in your `_config.yml`.
 
-#### Colour 3 (theme-3.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-3.jpg" width="400" alt="DevBlog color 3" />
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `title`    | string | The site title |
+| `disqus`   | string | The Disqus shortname; Unless you don't want to enable the comments system, you must specify this parameter. It is used in the production environment. |
+| `google_analytics` | string | The Google Analytics tracking ID; It is used in the production environment. |
 
-#### Colour 4 (theme-4.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-4.jpg" width="400" alt="DevBlog color 4" />
+### Optional Parameters
 
-#### Colour 5 (theme-5.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-5.jpg" width="400" alt="DevBlog color 5" />
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `author`   | string | The name of the author of the site; It would be showed in the copyright statement. |
+| `avatar`   | string | The avatar of the author of the site. |
+| `email`    | string | The email of the author of the site. |
+| `location` | string | The current living location of the author of the site. |
+| `skin`     | string | The skin name. See more information on the [Customization](#customization) section. |
+| `lang`     | string | The language of the site; The default value is `en`. |
+| `paginate` | int    | The number of posts on each page. |
+| `date_format` | string | The date format; The default value is `%b %-d, %Y`. |
+| `subscribe` | boolean | Show the subsribe feed button. |
 
-#### Colour 6 (theme-6.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-6.jpg" width="400" alt="DevBlog color 6" />
+## Archive Pages
 
-#### Colour 7 (theme-7.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-7.jpg" width="400" alt="DevBlog color 7" />
+Hamilton implements some archive templates in pure Liquid. For example, if you want to create a category archive page, set the below parameters on that page:
 
-#### Colour 8 (theme-8.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-8.jpg" width="400" alt="DevBlog color 8" />
+```yml
+---
+layout: archive-taxonomies
+type: categories
+---
+```
 
-## Features
+Or a tag archive page:
 
--  Fully Responsive
--  HTML5 + CSS3
--  Built on Bootstrap 4
--  **SCSS** source files included
--  8 Colour Schemes
--  1000+ FontAwesome 5 icons
--  Compatible with all modern browsers
+```yml
+layout: archive-taxonomies
+type: tags
+```
 
-## Credits
-- [Bootstrap](https://getbootstrap.com/)
-- [FontAwesome](https://fortawesome.github.io/Font-Awesome/)
-- [Highlight.js](https://highlightjs.org/)
+Or archive by years:
+
+```yml
+layout: archive-years
+```
+
+## MathJax
+
+You can enable MathJax on each post or page, just set `math: true` on that page.
+
+## TOC
+
+If you want to show the Table of Contents of a post or page on the left sidebar, just set `toc: true` on that page.
+
+## Customization
+
+### Metadata
+
+You can create a file `_includes/custom-head.html` in your repository, and add any metadata into that page, e.g. favicons.
+
+### Navigation
+
+You can create a file `_data/navigation.yml` to configure links to some pages. For example,
+
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+```
+
+The navigation bar also supports dropdown submenus:
+
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
+```
+
+### Social Media
+
+You can create a file `_data/social.yml` to configure links to your social media. For example,
+
+```yml
+- title: Twitter
+  url: https://twitter.com/ngzhio
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  icon: fab fa-github
+```
+
+### Skins
+
+You can select a skin by setting `skin` in `_config.yml`. The built-in skins include `daylight`, `midnight`, `sunrise`, and `sunset`. If you don't specify any skin, Hamilton would dynamically select one in these built-in skins according to different hours in a day.
+
+You can also customize a new skin, for example, a skin called `solarized`. You need to copy [`_sass/hamilton/skins/daylight.scss`](_sass/hamilton/skins/daylight.scss) into your repository and then rename it to `solarized.scss`, and adjust some colors in that file. Finally, specify `skin: solarized` in `_config.yml`.
+
+### More Customized Styles
+
+If you want to create more CSS styles in your site, creating a file `_sass/hamilton/custom-styles.scss`, and putting your code in there, Hamilton would automatically refer to them.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
