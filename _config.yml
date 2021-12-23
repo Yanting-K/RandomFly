@@ -1,8 +1,8 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+title: Blog
+description: 一技破万法.
+author: Yanting-K
 avatar: /logo.png
-email: ngzhio@gmail.com
+email: yanting_kang@163.com
 
 plugins:
   - jekyll-seo-tag
