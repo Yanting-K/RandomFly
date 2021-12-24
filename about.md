@@ -4,16 +4,14 @@ title: About
 permalink: /about/
 ---
 
-I am a postgraduate student at Donghua University in China. My research topic is **image inpainting**. I like to use **GAN**, **Target Detection** and other **Computer Vision** methods to do some things. At the same time, I am also a Geek, like to use STM32, raspberry PI to **DIY** some interesting projects.
+I am a postgraduate student at Donghua University in China. My research topic is **image inpainting**. I major in **GAN**, **Target Detection** and other **Computer Vision** methods. Meanwhile, I am also a Geek, I always make some projects with STM32, raspberry PI.
 
-In March of '22, I will graduate and go to work. I hope to update this blog with a few things about:
+In 22 March 2022, I will graduate and get a job. I hope I can update this blog with some things about:
 
 1. Paper interpretation in the direction of computer vision
-
+   
 2. Some tricks and experience in the game
-
-3. Create interesting DIY projects by combining your knowledge of embedded devices and computer vision
-
-
-
+   
+3. Create interesting projects by combining your knowledge of embedded devices and computer vision
+   
 If you are interested, you can fork me or follow my latest developments through other social platforms!
